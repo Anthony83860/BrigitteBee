@@ -46,6 +46,7 @@ li{
 }
  h2 {
     font-family: var(--font-gloria);
+    font-size: 45px;
  }
 
  h1{
@@ -53,18 +54,23 @@ li{
     font-weight: 500;
     color: red;
  }
-#premiertableau {
+h3 {
+    font-size: 28px;
+    font-family: var(--font-gloria);
+}
+
+#section1{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    align-content: center;
+    grid-template-columns: 70% 30%;
     align-items: center;
-    justify-items: end;
+    max-width: 1440px;
+    margin-bottom: 50px;
 }
 
-#premiertableau article :nth-child(1) {
-    display: grid;
-
+#section1 article:nth-child(1){
+    width: 50%;
 }
+
 
 #premiertableau a{
     color:black;
@@ -76,9 +82,93 @@ li{
     padding-top: 10px;
     padding-bottom: 10px;
     width: 15%;
+}
+#section1 article div{
+    align-items: center;
+    display:inline-flex;
+    gap: 10px;
 
+}
+hr{
+    background-color: red;
+    width: 20px;
+    max-height: 1px;
+}
+#section1 {
+    margin: 60px 0px 60px 0px;
+}
+#section1 img{
+    width: 100%;
+}
+
+
+
+.tableau1{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+#sectiongalerie{
+    background-color:#fbbbcd;
+    color: black;
+    width: 70%;
+    margin: auto;
+    padding: 60px;
+}
+#sectionphoto{
+    display: grid;
+    grid-template-columns:repeat(4,1fr) ;
+    gap: 20px;
+}
+#sectionphoto img:nth-child(5){
+    grid-column: 1/3;
+}
+#sectionphoto img:nth-child(6){
+    grid-column: 3/5;
+}
+#sectionphoto img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+#petitesection {
+    display: flex;
+    align-items:center ;
+    margin: auto;
+    gap: 600px;
+
+}
+#petitesection a{
+    color:black;
+    border: solid 2px #fbbbcd;
+    border-radius: 90%;
+    text-decoration: none;
+    border-radius: 10px;
+    padding-inline: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 15%;
+}
+
+#sectionpeinture{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+#sectionpeinture article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
     
 }
+
+#sectionpeinture img {
+    height: 300px;
+}
+  
+
  footer section {
     display: grid;
     grid-template-columns: repeat(3,1fr);
