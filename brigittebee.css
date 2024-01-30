@@ -16,10 +16,11 @@
 }
 
 header {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(3,1fr);
+    max-width: 1440px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     text-align: center;
     gap: 10px;
     margin: auto;
@@ -48,7 +49,9 @@ li{
     list-style: none;
     
 }
-
+#burger{
+    display: none;
+}
 #accueil {
     color: red;
 }
@@ -279,13 +282,15 @@ hr{
 }
 
  footer section {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(3,1fr);
     max-width: 1440px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     text-align: center;
     gap: 10px;
+    margin: auto;
+    padding: 50px 231.5px;
 
  }
  footer ul{
@@ -293,6 +298,7 @@ hr{
     grid-template-columns: repeat(6,1fr);
     justify-items: stretch;
     align-items: center;
+    gap: 20px;
  }
 
  footer a {
@@ -304,3 +310,68 @@ hr{
     color: red;
     transition: all 0.2s;
  }
+
+ @media screen and (max-width: 1024px){
+
+    nav {
+        display: none;
+    }
+
+  header div {
+    display: none
+  }
+   
+    
+    #burger {
+        display: block;
+    }
+
+ #section1{
+    display: flex;
+    align-items: flex-start;
+
+ }
+
+ .tableau1{
+    grid-template-columns: none;
+ }
+
+ #sectionphoto{
+    grid-template-columns: none;
+ }
+
+ #petitesection{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    gap: 100px;
+    text-align: center;
+    justify-content: center;
+ }
+ #sectionpeinture{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+ }
+
+ #nosartistes{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+ }
+ #tableauactu {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+
+#tableauactu article :nth-child(3){
+    grid-column: 1/3;
+}
+
+
+
+ }
+
+
