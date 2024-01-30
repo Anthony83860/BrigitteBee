@@ -11,23 +11,28 @@
 * {
     font-family: var(--font-noto);
     font-weight: 400;
+    font-size: 16px;
 
 }
 
 header {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    max-width: 1440px;
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
     gap: 10px;
+    margin: auto;
 }
 header ul {
     display: flex;
-    
+
     align-items: center;
     gap: 40px;
+}
+
+header li {
+    text-align: center;
 }
 
 header a {
@@ -35,7 +40,10 @@ header a {
     list-style: none;
     color: black;
 }
-
+header a:hover {
+    color: red;
+    transition: all 0.2s;
+}
 li{
     list-style: none;
     
@@ -53,10 +61,21 @@ li{
     text-transform: uppercase;
     font-weight: 500;
     color: red;
+    height: 2px;
  }
 h3 {
     font-size: 28px;
     font-family: var(--font-gloria);
+}
+
+.maxwidth{
+    max-width: 1440px;
+    margin: auto;
+}
+
+#premiertableau{
+    max-width: 1440px;
+    margin: auto;
 }
 
 #section1{
@@ -72,7 +91,7 @@ h3 {
 }
 
 
-#premiertableau a{
+#bouton {
     color:black;
     border: solid 2px #fbbbcd;
     border-radius: 90%;
@@ -82,6 +101,21 @@ h3 {
     padding-top: 10px;
     padding-bottom: 10px;
     width: 15%;
+    text-align: center;
+}
+
+#bouton:hover {
+    color:white;
+    border: solid 2px #fbbbcd;
+    border-radius: 90%;
+    text-decoration: none;
+    border-radius: 10px;
+    padding-inline: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 15%;
+    text-align: center;
+    background-color: #fbbbcd;
 }
 #section1 article div{
     align-items: center;
@@ -106,6 +140,7 @@ hr{
 .tableau1{
     display: grid;
     grid-template-columns: 40% 60%;
+    gap: 10px;
 }
 
 #sectiongalerie{
@@ -113,7 +148,7 @@ hr{
     color: black;
     width: 70%;
     margin: auto;
-    padding: 60px;
+    padding: 100px;
 }
 #sectionphoto{
     display: grid;
@@ -135,25 +170,18 @@ hr{
     display: flex;
     align-items:center ;
     margin: auto;
-    gap: 600px;
+    gap: 500px;
+    max-width: 1440px;
+    text-align: center;
+}
 
-}
-#petitesection a{
-    color:black;
-    border: solid 2px #fbbbcd;
-    border-radius: 90%;
-    text-decoration: none;
-    border-radius: 10px;
-    padding-inline: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 15%;
-}
 
 #sectionpeinture{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 10px;
+    max-width: 1440px;
+    margin: auto;
 }
 
 #sectionpeinture article{
@@ -167,7 +195,88 @@ hr{
 #sectionpeinture img {
     height: 300px;
 }
-  
+
+.lienartiste {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#fondgris {
+    background-color: #F7F7F7; 
+    padding: 80px;
+}
+#FC{
+    display: flex;
+    text-align: center;
+    margin: auto;
+   
+}
+
+#FC h2 {
+    width: 100%;
+}
+#nosartistes {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+#tableauactu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+#tableauactu h2 {
+    font-size: 18px;
+}
+
+#tableauactu a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.fondorange{
+    background-color: #CC3900;
+    margin-top: 30px;
+}
+.fondorange article{
+    width: 800px;
+    height: 333px;
+    color: white;
+    margin: auto;
+    padding: 100px 100px 200px 100px;
+}
+.fondorange a{
+    margin: auto;
+    display: flex;
+    color: white;
+    border: solid 1px white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding-inline: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 15%;
+    text-align: center;
+
+}
+
+.fondorange a:hover {
+    margin: auto;
+    display: flex;
+    color: #CC3900;
+    border: solid 1px white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding-inline: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 15%;
+    text-align: center;
+    background-color: white;
+    transition: all 0.2s;
+}
 
  footer section {
     display: grid;
@@ -190,4 +299,8 @@ hr{
     text-decoration: none;
     list-style: none;
     color: black;
+ }
+ footer a:hover {
+    color: red;
+    transition: all 0.2s;
  }
